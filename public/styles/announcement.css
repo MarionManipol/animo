@@ -1,0 +1,25 @@
+.post-announcement{ 
+  margin-left: 10px;
+  margin-top: 20px;
+  padding:5px;
+  background-color: white;
+  display: grid;
+  width:600px;
+  border-radius: 10px;
+}
+
+.post-content-title{
+  padding: 5px;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: lightpink;
+  text-align: justify;
+}
+
+.post-content-announcement{
+    padding: 5px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: mistyrose;
+    text-align: justify;
+  }

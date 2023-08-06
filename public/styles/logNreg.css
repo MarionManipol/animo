@@ -1,0 +1,61 @@
+body{
+  text-align: center;
+}
+
+.register-container,
+.login-container{
+  padding: 10px;
+  margin-top: 40px;
+  display: grid;
+  background-color: white;
+  margin-inline: auto;
+  width: min(100% - 3rem, 40ch);
+  row-gap: 10px;
+}
+
+#idNumber,
+#email,
+#username,
+#password,
+#confirmPassword,
+#id{
+  height: 30px;
+  font-size: 15px;
+  border-radius: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-style: solid;
+}
+
+#loginMsg{ 
+  border-radius: 10px;
+  background-color: rgb(45,137,53);
+  padding: 5px;
+  color: white;
+}
+
+#registerBtn,
+#loginBtn{
+  margin-bottom: 15px;
+  color: white;
+  background-color: rgb(45,137,53);
+  border:none;
+  font-size: 25px;
+  padding-top:9px;
+  padding-bottom:9px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border-radius: 25px;
+  cursor:pointer;
+  transition: color 0.15s, background-color 0.15s;
+  box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.4);
+}
+
+#loginBtn:hover{
+  color: rgb(45,137,53);
+  background-color: white;
+}
+
+#loginBtn:active{
+  box-shadow: none;
+}

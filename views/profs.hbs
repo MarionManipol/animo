@@ -1,0 +1,58 @@
+{{> header}}
+
+<script src="../javascript/profs.js"> </script>
+<!-- to be replaced soon, atm just here to fill in-->
+{{#each professors}}
+<div>
+        <div class="prof">
+            <div class="poster-info">
+              <div><img class="user-profile" src="prof-assets/{{this.asset}}"></div>
+              <div>
+                <p class="prof-name">{{this.username}}</p>
+                <p class="prof-class">{{this.class}}</p>
+              </div>
+            </div>
+            <div class="prof-stats">
+              <div class="post-up" data-professor-id="{{this._id}}">▲</div>
+              <div><strong>{{this.upvotes}}</strong> Upvotes</div>
+              <div class="post-down" data-professor-id="{{this._id}}">▼</div>
+              <div><strong>{{this.downvotes}}</strong> Downvotes</div>
+            </div>
+            <!--<button type="button" class="prof-collapsible" aria-expanded="false"><strong>2 Comments</strong></button>
+            <div class="prof-comment-section"> 
+                <div class="prof-comment">
+                    <div><img class="user-profile" src="profile-assets/profile-2.jpeg"></div>
+                    <div>
+                        <p class="prof-commenter-comment"><Strong>Cabinbin</Strong>: <span style="color:grey">This message has been removed by moderators</span></p>
+                    </div>
+                </div>
+                <div class="prof-comment">
+                    <div><img class="user-profile" src="profile-assets/profile-2.jpeg"></div>
+                    <div>
+                        <p class="prof-commenter-comment"><Strong>Cabinbin</Strong>: Good Professor...</p>
+                    </div>
+                </div>
+            </div>-->
+        </div>
+
+    </div>
+
+{{/each}}
+
+<script>
+        var coll = document.getElementsByClassName("prof-collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }
+</script>
+

@@ -1,0 +1,62 @@
+
+
+{{> header}} <!-- wont work for some reason???? broken logo + buttons-->
+
+
+    <div class="user">
+      <div><img class="user-banner" src="/profile-assets/{{user.profile_banner}}"></div>
+        <div class="user-bio">
+          <div><img class="user-profile" src="/profile-assets/{{user.profile_picture}}"></div>
+          <div class="user-info">
+            <p id="user-name" class="user-name">{{user.username}}</p>
+            <p id ="user-ID" class="user-ID">{{user.id}}</p>
+            <p class="user-intro">{{user.intro}}</p>
+          </div>
+        </div>
+    </div>
+    <div id="post-grid" class="post-grid"></div>
+        <!-- posts go here-->
+      {{#each posts}}
+        <div class="post">
+          <div class="poster-info">
+            <div><a href="/profile-page/{{this.username}}"><img class="user-profile" src="/profile-assets/{{this.profile_picture}}"></a></div>
+            <div>
+              <p class="post-name">{{this.username}}</p>
+              <p class="post-date">{{this.date}}</p>
+            </div>
+          </div>
+          <div class="post-content">
+            <p>{{this.content}}</p>
+            {{#if this.media_content}}
+            <img class="post-image" src="/profile-assets/{{this.media_content}}">
+            {{/if}}
+          </div>
+          <div class="post-stats">
+            <div class="post-heart" data-post-id="{{this._id}}">&#9829;</div>
+            <div><strong>{{this.likes}}</strong> Likes</div>
+            <div><strong>{{this.comments}}</strong> Comments</div>
+          </div>
+        </div>
+      {{/each}}
+
+    <div class="fixed-grid">
+      <button id="compose" class="fg-button"><img class="fg-image" src="site-assets/compose1.jpg"></button></button>
+    </div>
+
+    <div id="form-overlay" class="form-overlay">
+      <div class="form-container">
+        <form id="post-form" name="post-form">
+          <textarea id="text-input" name="text-input" class="form-text-input" rows="4" cols="50" placeholder="Watchu doing?"></textarea>
+    
+          <label for="image-file">Upload an image</label>
+          <input type="file" name="file" id="image-file" accept="image/*">
+          <p></p>
+          <button id="submit-post" class="form-submit" type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+

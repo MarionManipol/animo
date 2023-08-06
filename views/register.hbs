@@ -1,0 +1,44 @@
+
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/logNReg.css">
+  </head>
+
+  {{> preheader}}
+    
+    <div class="register-container">
+      <div id="loginMsg">
+      <h2>Enter your...</h2>
+    </div>
+      <form id="registerForm">
+        <div>
+          <input name="name" id="username" placeholder="Full Name">
+        </div>
+        <div><br>
+          <input name="email" id="email" placeholder="E-mail Address">
+        </div>
+        <div><br>
+          <input name="id" id="idNumber" placeholder="ID Number">
+        </div>
+        <div><br>
+          <input name="password" id="password" placeholder="Password">
+        </div>
+        <div><br>
+          <input name="confirmPassword" id="confirmPassword" placeholder="Confirm your password">
+        </div>
+        <div><br>
+        <p class="error" id="r_error">  </p>
+        <p class="error" id="p_error">  </p>
+          <button id="registerBtn" class="registerBtn">Register</button>
+        </div>
+      </form>
+        <div>
+          <p>Already have an account?<br> <a href="/login-page">Login here</a></p>
+        </div>
+    </div>
+
+<script src="../javascript/register.js"> </script>

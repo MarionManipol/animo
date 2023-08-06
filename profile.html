@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/post.css">
+    <link rel="stylesheet" href="styles/profile.css">
+
+  </head>
+  <body>
+    <div class="navbar">
+      <img class="logo" src="site-assets/Logo.png">
+      <div class="leftnav">
+        <button  id="animoWallButton" class="navbutton">Animo Wall</button>
+        <button id="profButton" class="navbutton">Prof's to Pick</button>
+        <button id="announcementButton" class="navbutton">Announcements</button>
+      </div>
+    </div>
+
+    <div class="user">
+      <div><img class="user-banner" src="profile-assets/banner.png"></div>
+        <div class="user-bio">
+          <div><img class="user-profile" src="site-assets/you.jpg"></div>
+          <div class="user-info">
+            <p id="user-name" class="user-name">Placeholder</p>
+            <p id ="user-ID" class="user-ID">ID: Placeholder</p>
+            <p class="user-intro">This is you</p>
+          </div>
+        </div>
+    </div>
+    <div id="post-grid" class="post-grid"></div>
+
+    <div class="fixed-grid">
+      <button id="compose" class="fg-button"><img class="fg-image" src="site-assets/compose1.jpg"></button></button>
+    </div>
+
+    <div id="form-overlay" class="form-overlay">
+      <div class="form-container">
+        <form id="post-form" name="post-form">
+          <textarea id="text-input" name="text-input" class="form-text-input" rows="4" cols="50" placeholder="Watchu doing?"></textarea>
+    
+          <label for="image-file">Upload an image</label>
+          <input type="file" name="file" id="image-file" accept="image/*">
+          <p></p>
+          <button id="submit-post" class="form-submit" type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="javascript/post.js"></script>
+    <script src="javascript/currentuser.js"></script>
+    <script src="javascript/createpost.js"></script>
+    <script src="javascript/profile.js"></script>
+  </body>
+</html>
+

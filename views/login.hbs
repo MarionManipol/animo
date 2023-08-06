@@ -1,0 +1,32 @@
+
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/logNReg.css">
+  </head>
+    {{> preheader}}
+    <div class="login-container">
+      <div id="loginMsg">
+      <h2>Log in to Animo</h2>
+    </div>
+      <form name="loginForm" id="loginForm">
+        <div>
+          <input name="id" id="id" placeholder="ID Number">
+        </div>
+        <div><br>
+          <input name="password" id="password" placeholder="Password">
+        </div>
+        <div><br>
+        <p class="error" id="r_error">  </p>
+          <button id="loginBtn" class="loginBtn">Log In</button>
+        </div>
+        <div>
+          <p>Don't have an account?<br> <a href="/register-page">Register here</a></p>
+        </div>
+      </form>
+    </div>
+
+<script src="../javascript/login.js"> </script>

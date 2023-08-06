@@ -1,0 +1,52 @@
+.user{
+        
+  margin-left:10px;
+  display:grid;
+  grid-template-columns: 600px;
+  width:600px;
+}
+
+.user-banner{
+  object-fit: cover;
+  height:200px;
+  width:100%;
+  cursor:pointer;
+}
+
+.user-bio{
+  display:grid;
+  grid-template-columns: 100px 1fr
+}
+
+.user-profile{
+  width:100%;
+  border-radius: 100px;
+  border:solid;
+  border-color: rgb(45,137,53);
+  border-width: 2px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.user-info{
+  padding-top: 12px;
+  padding-left: 10px;
+  
+}
+.user-name{
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20px;
+}
+.user-ID{
+  color:rgb(96,96,96);
+  font-size:12px;
+  margin-top: 2px;
+  margin-bottom: 5px;
+}
+
+.user-intro{
+  font-size: 16px;
+}
+
+/* Add any additional styling as per your requirements */

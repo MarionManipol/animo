@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Prof's to Pick
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/profile.css">
+    <link rel="stylesheet" href="styles/post.css">
+    <link rel="stylesheet" href="styles/prof.css">
+
+    <style>
+      .search-grid{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 20px;
+        width: min(100% - 3rem, 65ch);
+        margin-inline: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <img class="logo" src="site-assets/Logo.png">
+      <div class="leftnav">
+        <button id="animoWallButton" class="navbutton">Animo Wall</button>
+        <button id="profButton" class="navbutton">Prof's to Pick</button>
+        <button id="announcementButton" class="navbutton">Announcements</button>
+      </div>
+    </div>
+    <div>
+        <div class="prof">
+            <div class="poster-info">
+              <div><img class="user-profile" src="prof-assets/MrMordaut.PNG"></div>
+              <div>
+                <p class="prof-name">Professor Mordaut</p>
+                <p class="prof-class">CSARCH1 - S12</p>
+              </div>
+            </div>
+            <div class="prof-stats">
+              <div class="post-up">▲</div>
+              <div><strong>621</strong> Upvotes</div>
+              <div class="post-down">▼</div>
+              <div><strong>34</strong> Downvotes</div>
+            </div>
+            <button type="button" class="prof-collapsible" aria-expanded="false"><strong>2 Comments</strong></button>
+            <div class="prof-comment-section"> 
+                <div class="prof-comment">
+                    <div><img class="user-profile" src="profile-assets/profile-2.jpeg"></div>
+                    <div>
+                        <p class="prof-commenter-comment"><Strong>Cabinbin</Strong>: <span style="color:grey">This message has been removed by moderators</span></p>
+                    </div>
+                </div>
+                <div class="prof-comment">
+                    <div><img class="user-profile" src="profile-assets/profile-2.jpeg"></div>
+                    <div>
+                        <p class="prof-commenter-comment"><Strong>Cabinbin</Strong>: Good Professor...</p>
+                    </div>
+                </div>
+            </div> 
+        </div>
+      
+        <div class="prof">
+            <div class="poster-info">
+              <div><img class="user-profile" src="prof-assets/Coach.PNG"></div>
+              <div>
+                <p class="prof-name">Professor Harold Grifter</p>
+                <p class="prof-class">GEPCOMM - Y13</p>
+              </div>
+            </div>
+            <div class="prof-stats">
+              <div class="post-up">▲</div>
+              <div><strong>285</strong> Upvotes</div>
+              <div class="post-down">▼</div>
+              <div><strong>7</strong> Downvotes</div>
+            </div>
+            <button type="button" class="prof-collapsible" aria-expanded="false"><strong>1 Comment</strong></button>
+            <div class="prof-comment-section"> 
+                <div class="prof-comment">
+                    <div><img class="user-profile" src="profile-assets/profile-2.jpeg"></div>
+                    <div>
+                        <p class="prof-commenter-comment"><Strong>Cabinbin</Strong>: Great teacher! I wonder how he's juggling the tennis team too, godspeed.</p>
+                    </div>
+                </div>
+            </div> 
+        </div>
+
+        <div class="prof">
+            <div class="poster-info">
+              <div><img class="user-profile" src="prof-assets/ProfessorAbbet.PNG"></div>
+              <div>
+                <p class="prof-name">Professor Abbet</p>
+                <p class="prof-class">STALGCM - S12</p>
+              </div>
+            </div>
+            <div class="prof-stats">
+              <div class="post-up">▲</div>
+              <div><strong>405</strong> Upvotes</div>
+              <div class="post-down">▼</div>
+              <div><strong>404</strong> Downvotes</div>
+            </div>
+            <button type="button" class="prof-collapsible" aria-expanded="false"><strong>1 Comment</strong></button>
+            <div class="prof-comment-section"> 
+                <div class="prof-comment">
+                    <div><img class="user-profile" src="profile-assets/profile-2.jpeg"></div>
+                    <div>
+                        <p class="prof-commenter-comment"><Strong>Cabinbin</Strong>: I've sent him over 20 emails and called him multiple times, don't ever be late, damn.</p>
+                    </div>
+                </div>
+            </div> 
+        </div>
+
+        <div class="prof">
+            <div class="poster-info">
+              <div><img class="user-profile" src="prof-assets/Lion.PNG"></div>
+              <div>
+                <p class="prof-name">Professor Lion</p>
+                <p class="prof-class">GESPORTS - S15</p>
+              </div>
+            </div>
+            <div class="prof-stats">
+              <div class="post-up">▲</div>
+              <div><strong>333</strong> Upvotes</div>
+              <div class="post-down">▼</div>
+              <div><strong>0</strong> Downvotes</div>
+            </div>
+            <button type="button" class="prof-collapsible" aria-expanded="false"><strong>2 Comments</strong></button>
+            <div class="prof-comment-section"> 
+                <div class="prof-comment">
+                    <div><img class="user-profile" src="profile-assets/profile-2.jpeg"></div>
+                    <div>
+                        <p class="prof-commenter-comment"><Strong>Cabinbin</Strong>: <span style="color:grey">This message has been removed by moderators</span></p>
+                    </div>
+                </div>
+                <div class="prof-comment">
+                    <div><img class="user-profile" src="profile-assets/profile-2.jpeg"></div>
+                    <div>
+                        <p class="prof-commenter-comment"><Strong>Cabinbin</Strong>: <span style="color:grey">User is now banned for chatting in this comment section</span></p>
+                    </div>
+                </div>
+            </div> 
+        </div>
+
+        <div class="prof">
+            <div class="poster-info">
+              <div><img class="user-profile" src="prof-assets/Sensei.PNG"></div>
+              <div>
+                <p class="prof-name">Mr. Sensei</p>
+                <p class="prof-class">LCENWRD - Y61</p>
+              </div>
+            </div>
+            <div class="prof-stats">
+              <div class="post-up">▲</div>
+              <div><strong>456</strong> Upvotes</div>
+              <div class="post-down">▼</div>
+              <div><strong>12</strong> Downvotes</div>
+            </div>
+            <button type="button" class="prof-collapsible" aria-expanded="false"><strong>0 Comments</strong></button>
+            <div class="prof-comment-section"> 
+            </div> 
+        </div>
+
+    </div>
+
+    <div class="fixed-grid">
+      <button id="userprofile" class="fg-button"><img class="fg-image" src="site-assets/you.jpg"></button>
+    </div>
+
+    <script>
+        var coll = document.getElementsByClassName("prof-collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }
+
+        
+        </script>
+        <script src="javascript/post.js"></script>
+        <script src="javascript/general.js"></script>
+    </body>
+</html>
